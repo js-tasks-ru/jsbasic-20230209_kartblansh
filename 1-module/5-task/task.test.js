@@ -1,14 +1,14 @@
 describe('1-module-5-task', () => {
   it('должна усекать строку ', () => {
     let baseStr = 'Вот, что мне хотелось бы сказать на эту тему:';
-    let resultStr = 'Вот, что мне хотело…';
+    let resultStr = 'Вот, что мне хотелос…';
 
     expect(truncate(baseStr, 20)).toBe(resultStr);
   });
 
   it('должна усекать строку для другого maxlength', () => {
     let baseStr = 'Вот, что мне хотелось бы сказать на эту тему:';
-    let resultStr = 'Вот, что …';
+    let resultStr = 'Вот, что м…';
 
     expect(truncate(baseStr, 10)).toBe(resultStr);
   });
